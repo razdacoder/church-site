@@ -1,4 +1,17 @@
 $(document).ready(function () {
+  var $navBtn = $("#nav-btn");
+  var $mobileNav = $("#mobile-nav");
+  var $mobileNavClose = $("#close-mobile-nav");
+
+  $navBtn.click(function () {
+    $mobileNav.removeClass("hidden");
+  });
+
+  $mobileNavClose.click(function () {
+    $mobileNav.addClass("hidden");
+  });
+
+  $("#nav-btn").click({});
   $("#events").slick({
     dots: false,
     arrows: false,

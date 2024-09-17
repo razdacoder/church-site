@@ -23,7 +23,7 @@
   <body class="font-sans">
     <!-- Hedaer Section -->
     <header
-      class="h-[60vh] md:h-[85vh] lg:h-screen  flex flex-col bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./../assets/banner.jpg')] bg-cover bg-center"
+      class="h-[70vh] md:h-[85vh] lg:h-screen  flex flex-col bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./../assets/banner.jpg')] bg-cover bg-center"
     >
       <nav class="container mx-auto p-6 flex justify-between items-center">
         <a href="index.html" class="text-2xl font-bold text-white">LOGO</a>
@@ -73,6 +73,7 @@
             Quick Links <i class="fa-solid fa-chevron-down"></i>
           </button>
           <button
+          id="nav-btn"
             class="inline-block lg:hidden text-primary  text-lg py-1 px-2 rounded-full font-medium uppercase"
           >
            <i class="fa-solid fa-bars"></i>
@@ -99,19 +100,55 @@
           </button>
         </div>
       </div>
+
+      <div id="mobile-nav" class=" hidden absolute bg-black min-h-screen w-full p-4 space-y-6">
+        <div class="space-y-6">
+          <div class="flex justify-end">
+            <button id="close-mobile-nav" class="text-primary">
+              <i class="fa-solid fa-close"></i>
+            </button>
+          </div>
+          <div class="flex gap-3 items-center">
+            <button
+              class="block bg-primary text-xs py-2 px-3 w-full rounded-full font-medium uppercase"
+            >
+              Espanyol
+            </button>
+            <button
+              class="flex gap-3 items-center justify-center bg-primary  text-xs py-2 px-3 w-full rounded-full font-medium uppercase"
+            >
+              Quick Links <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </div>
+        </div>
+        <div class="flex flex-col text-3xl text-primary font-medium gap-6">
+          <a href="#" class="flex justify-between items-center">About Us <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <a href="#" class="flex justify-between items-center">Get Involved <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <a href="#" class="flex justify-between items-center">Get Support <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <a href="#" class="flex justify-between items-center">Mission + Ministry <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <a href="#" class="flex justify-between items-center">Training + Events <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <a href="#" class="flex justify-between items-center">US Districts <i class="fa-solid fa-chevron-down"></i
+          ></a>
+        </div>
+      </div>
     </header>
 
     <main class="mt-12">
       <section class="py-12">
         <div class="max-w-screen-xl mx-auto p-4 space-y-6">
           <div class="space-y-4  max-w-screen-sm mx-auto">
-            <h2 class="text-4xl font-bold text-center">Industry</h2>
+            <h2 class="text-5xl font-bold text-center">Industry</h2>
             <p class="text-lg font-medium text-gray-500 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum provident error sed aut dignissimos, ea harum? Ea reprehenderit eius ducimus nemo voluptatum beatae quis esse?</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="flex gap-4 flex-col border px-4 py-6 rounded-md drop-shadow-sm">
               <div class="flex gap-4 items-center">
-                <i class="fa-solid fa-plane text-2xl"></i>
+                <img src="/src/assets/icons8-family-50.png" />
                 <h4 class="text-2xl font-semibold">Family of Faith</h4>
               </div>
               <p class="font-medium text-gray-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam ut, deleniti recusandae repellendus ullam quos impedit quibusdam magni molestias necessitatibus rerum optio assumenda consequuntur.</p>
@@ -119,7 +156,7 @@
 
             <div class="flex gap-4 flex-col border px-4 py-6 rounded-md drop-shadow-sm">
               <div class="flex gap-4 items-center">
-                <i class="fa-solid fa-credit-card text-2xl"></i>
+                 <img src="/src/assets/icons8-holy-bible-50.png" />
                 <h4 class="text-2xl font-semibold">Bible Believers</h4>
               </div>
               <p class="font-medium text-gray-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam ut, deleniti recusandae repellendus ullam quos impedit quibusdam magni molestias necessitatibus rerum optio assumenda consequuntur.</p>
@@ -127,7 +164,7 @@
 
             <div class="flex gap-4 flex-col border px-4 py-6 rounded-md drop-shadow-sm">
               <div class="flex gap-4 items-center">
-                <i class="fa-solid fa-users text-2xl"></i>
+                 <img src="/src/assets/icons8-prayer-50.png" />
                 <h4 class="text-2xl font-semibold">People of Prayer</h4>
               </div>
               <p class="font-medium text-gray-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam ut, deleniti recusandae repellendus ullam quos impedit quibusdam magni molestias necessitatibus rerum optio assumenda consequuntur.</p>
@@ -135,7 +172,7 @@
 
             <div class="flex gap-4 flex-col border px-4 py-6 rounded-md drop-shadow-sm">
               <div class="flex gap-4 items-center">
-                <i class="fa-solid fa-truck text-2xl"></i>
+                 <img src="/src/assets/icons8-helping-50.png" />
                 <h4 class="text-2xl font-semibold">Helping Hands</h4>
               </div>
               <p class="font-medium text-gray-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam ut, deleniti recusandae repellendus ullam quos impedit quibusdam magni molestias necessitatibus rerum optio assumenda consequuntur.</p>
@@ -143,7 +180,7 @@
 
             <div class="flex gap-4 flex-col border px-4 py-6 rounded-md drop-shadow-sm">
               <div class="flex gap-4 items-center">
-                <i class="fa-solid fa-repeat text-2xl"></i>
+                <img src="/src/assets/public-service.png" class="size-10" />
                 <h4 class="text-2xl font-semibold">Community Services</h4>
               </div>
               <p class="font-medium text-gray-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam ut, deleniti recusandae repellendus ullam quos impedit quibusdam magni molestias necessitatibus rerum optio assumenda consequuntur.</p>
@@ -151,7 +188,7 @@
 
             <div class="flex gap-4 flex-col border px-4 py-6 rounded-md drop-shadow-sm">
               <div class="flex gap-4 items-center">
-                <i class="fa-solid fa-envelope text-2xl"></i>
+               <img src="/src/assets/saint-patrick.png" class="size-10" />
                 <h4 class="text-2xl font-semibold">Equipping Saints</h4>
               </div>
               <p class="font-medium text-gray-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam ut, deleniti recusandae repellendus ullam quos impedit quibusdam magni molestias necessitatibus rerum optio assumenda consequuntur.</p>
@@ -162,8 +199,8 @@
 
       <section class="py-10">
         <div class="max-w-screen-2xl mx-auto p-4">
-          <div class="grid grid-cols-4 gap-6 lg:gap-12">
-            <img src="./assets/image-section-1.jpg" alt="" class="w-full  h-[380px] md:h-[450px] lg:h-auto" />
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12">
+            <img src="./assets/image-section-1.jpg" alt=""  />
             <div class="w-full  space-y-6">
               <h2 class="text-5xl font-semibold ">
                 New to Foursquare? We're ready to help!
@@ -478,7 +515,7 @@
       </section>
 
       <section class="py-24">
-        <div class="max-w-screen-lg mx-auto space-y-12 p-4">
+        <div class="max-w-screen-xl mx-auto space-y-12 p-4">
           <h2 class="text-4xl lg:text-6xl font-extrabold text-center mx-auto">
             The latest from Foursquare
           </h2>
