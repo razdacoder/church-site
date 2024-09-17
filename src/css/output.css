@@ -1317,4 +1317,9 @@ video {
     font-size: 6rem;
     line-height: 1;
   }
+
+  .lg\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
