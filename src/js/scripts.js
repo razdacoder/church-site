@@ -4,11 +4,12 @@ $(document).ready(function () {
   var $mobileNavClose = $("#close-mobile-nav");
 
   $navBtn.click(function () {
-    $mobileNav.removeClass("hidden");
+    // $mobileNav.removeClass("hidden");
+    $mobileNav.fadeIn("slow");
   });
 
   $mobileNavClose.click(function () {
-    $mobileNav.addClass("hidden");
+    $mobileNav.fadeOut("slow");
   });
 
   $("#nav-btn").click({});
