@@ -7,4 +7,8 @@
   .text-gradient {
     @apply relative before:absolute before:-bottom-2 before:h-0.5 before:w-full before:block before:bg-red-500 before:bg-[linear-gradient(to_right,#d64e57,#3647bc,#785dbb)];
   }
+
+  .text-gradient-hover {
+    @apply relative before:absolute before:-bottom-2 before:h-0.5 before:w-0 transition hover:before:w-full before:block before:bg-red-500 before:bg-[linear-gradient(to_right,#d64e57,#3647bc,#785dbb)];
+  }
 }
