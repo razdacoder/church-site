@@ -49,4 +49,15 @@ $(document).ready(function () {
       // instead of a settings object
     ],
   });
+
+  $(".accordion-trigger").on("click", function (e) {
+    e.preventDefault();
+    var $content = $(this).next(".accordion-content");
+
+    // Toggle the display of the clicked content
+    $content.slideToggle(300);
+
+    // Optionally close other accordions if only one section should be open at a time
+    $(".accordion-content").not($content).slideUp(300);
+  });
 });
