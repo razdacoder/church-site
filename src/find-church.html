@@ -23,7 +23,7 @@
   <body class="font-sans">
     <!-- Hedaer Section -->
     <header
-      class="h-[70vh] md:h-[85vh] flex flex-col bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./../assets/event-banner.jpeg')] bg-cover bg-center"
+      class="h-[60vh] flex flex-col bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./../assets/find-church.jpg')] bg-cover bg-center"
     >
       <nav class="p-8 flex justify-between gap-8 items-center">
         <a href="index.html" class="text-2xl font-bold text-white">LOGO</a>
@@ -677,15 +677,10 @@
         <h1
           class="text-white text-5xl md:text-7xl lg:text-8xl text-center font-extrabold"
         >
-          Join an upcoming Foursquare event
+          Church Locator
         </h1>
-        <p
-          class="text-lg md:text-2xl font-medium text-white text-center tracking-wider p-4"
-        >
-          Welcome to your one stop shop for finding upcoming national and
-          district Foursquare events! Looking for something specific? Click on
-          <span class="font-semibold">Show Filters</span> and find events by
-          district, category or even a venue. We can't wait to see you soon!
+        <p class="text-lg text-center font-medium text-white">
+          Find a Foursquare church, camp or educational opportunity near you.
         </p>
       </div>
 
@@ -779,421 +774,177 @@
       </div>
     </header>
 
-    <main class="mt-6 md:mt-12">
-      <section class="py-6 md:py-12">
-        <div class="max-w-screen-xl mx-auto p-4 space-y-8">
-          <div
-            class="hidden md:flex items-center border border-gray-600 px-3 py-1.5 gap-3"
-          >
-            <div
-              class="bg-white w-1/2 md:w-3/6 px-3 py-4 flex items-center gap-2 border-r-0"
-            >
-              <input
-                type="search"
-                placeholder="Search for events"
-                class="flex-1 focus:outline-none text-sm font-light"
-              />
-            </div>
-            <span class="text-gray-400">|</span>
-            <div
-              class="bg-white w-1/2 md:w-2/6 px-3 py-4 flex items-center gap-2 border-l-0"
-            >
-              <input
-                type="search"
-                placeholder="In a location"
-                class="flex-1 focus:outline-none text-sm font-light"
-              />
-            </div>
-            <div class="hidden md:w-1/6">
-              <button
-                type="button"
-                class="w-full inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide text-white transition-colors duration-200 rounded-md bg-neutral-950 hover:bg-neutral-900 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none"
+    <main class="">
+      <section>
+        <div class="max-w-screen-lg mx-auto p-8 space-y-8">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="flex flex-col gap-1 md:col-span-2">
+              <label for="" class="uppercase font-medium"
+                >Search by City / Zipcode</label
               >
-                Find Events
-              </button>
+              <input
+                type="text"
+                class="border-2 border-gray-500 px-3 py-2 focus:outline-none flex-1"
+              />
+            </div>
+            <div class="w-full flex flex-col gap-1">
+              <label for="" class="uppercase font-medium">Select state</label>
+              <select
+                type="text"
+                class="border-2 border-gray-500 px-3 py-2 focus:outline-none flex-1 bg-white"
+              >
+                <option value="">NG</option>
+                <option value="">NG</option>
+                <option value="">NG</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="" class="uppercase font-medium"
+                >Select distance</label
+              >
+              <select
+                type="text"
+                class="border-2 border-gray-500 px-3 py-2 focus:outline-none flex-1 bg-white"
+              >
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row items-center md:justify-between space-y-2"
+          >
+            <div class="space-y-2">
+              <label for="" class="uppercase">Select Type</label>
+              <div class="flex flex-wrap items-center gap-4">
+                <div class="flex items-center gap-2">
+                  <input type="checkbox" name="" id="" class="size-[18px]" />
+                  <label for="" class="text-sm uppercase font-medium"
+                    >churches</label
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <input type="checkbox" name="" id="" class="size-[18px]" />
+                  <label for="" class="text-sm uppercase font-medium"
+                    >camps</label
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <input type="checkbox" name="" id="" class="size-[18px]" />
+                  <label for="" class="text-sm uppercase font-medium"
+                    >schools</label
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <input type="checkbox" name="" id="" class="size-[18px]" />
+                  <label for="" class="text-sm uppercase font-medium"
+                    >institutions</label
+                  >
+                </div>
+              </div>
             </div>
             <button
               type="button"
-              class="w-full inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide text-white transition-colors duration-200 rounded-md bg-neutral-950 hover:bg-neutral-900 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none"
+              class="w-full inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 bg-white border-2 rounded-md text-black hover:black/80 border-black hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black/70 focus:shadow-outline"
             >
-              Find Events
+              Search
             </button>
           </div>
+        </div>
+      </section>
 
+      <section class="bg-gray-200 py-12">
+        <div class="max-w-screen-xl mx-auto p-8">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <a
-              href="event-detail.html"
-              class="block overflow-hidden bg-white text-neutral-700 w-full"
-            >
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
-              </div>
-            </a>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
+            <div class="p-4 bg-white">
+              <span>Church</span>
+              <div class="p-2 space-y-6">
+                <h3 class="text-3xl font-bold">
+                  Companerismo Cristiano de Los Angeles
+                </h3>
+                <p class="font-medium">
+                  8714 Avalon Blvd Los Angeles, CA90003-3545 Rev. Roberto Castro
+                </p>
               </div>
             </div>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
+            <div class="p-4 bg-white">
+              <span>Church</span>
+              <div class="p-2 space-y-6">
+                <h3 class="text-3xl font-bold">
+                  Companerismo Cristiano de Los Angeles
+                </h3>
+                <p class="font-medium">
+                  8714 Avalon Blvd Los Angeles, CA90003-3545 Rev. Roberto Castro
+                </p>
               </div>
             </div>
-            <a
-              href="event-detail.html"
-              class="block overflow-hidden bg-white text-neutral-700 w-full"
-            >
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
-              </div>
-            </a>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
+            <div class="p-4 bg-white">
+              <span>Church</span>
+              <div class="p-2 space-y-6">
+                <h3 class="text-3xl font-bold">
+                  Companerismo Cristiano de Los Angeles
+                </h3>
+                <p class="font-medium">
+                  8714 Avalon Blvd Los Angeles, CA90003-3545 Rev. Roberto Castro
+                </p>
               </div>
             </div>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
+            <div class="p-4 bg-white">
+              <span>Church</span>
+              <div class="p-2 space-y-6">
+                <h3 class="text-3xl font-bold">
+                  Companerismo Cristiano de Los Angeles
+                </h3>
+                <p class="font-medium">
+                  8714 Avalon Blvd Los Angeles, CA90003-3545 Rev. Roberto Castro
+                </p>
               </div>
             </div>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
+            <div class="p-4 bg-white">
+              <span>Church</span>
+              <div class="p-2 space-y-6">
+                <h3 class="text-3xl font-bold">
+                  Companerismo Cristiano de Los Angeles
+                </h3>
+                <p class="font-medium">
+                  8714 Avalon Blvd Los Angeles, CA90003-3545 Rev. Roberto Castro
+                </p>
               </div>
             </div>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
+            <div class="p-4 bg-white">
+              <span>Church</span>
+              <div class="p-2 space-y-6">
+                <h3 class="text-3xl font-bold">
+                  Companerismo Cristiano de Los Angeles
+                </h3>
+                <p class="font-medium">
+                  8714 Avalon Blvd Los Angeles, CA90003-3545 Rev. Roberto Castro
+                </p>
               </div>
             </div>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
+            <div class="p-4 bg-white">
+              <span>Church</span>
+              <div class="p-2 space-y-6">
+                <h3 class="text-3xl font-bold">
+                  Companerismo Cristiano de Los Angeles
+                </h3>
+                <p class="font-medium">
+                  8714 Avalon Blvd Los Angeles, CA90003-3545 Rev. Roberto Castro
+                </p>
               </div>
             </div>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
+            <div class="p-4 bg-white">
+              <span>Church</span>
+              <div class="p-2 space-y-6">
+                <h3 class="text-3xl font-bold">
+                  Companerismo Cristiano de Los Angeles
+                </h3>
+                <p class="font-medium">
+                  8714 Avalon Blvd Los Angeles, CA90003-3545 Rev. Roberto Castro
+                </p>
               </div>
             </div>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
-              </div>
-            </div>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
-              </div>
-            </div>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
-              </div>
-            </div>
-            <div class="overflow-hidden bg-white text-neutral-700 w-full">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="p-4 flex gap-3">
-                <div class="space-y-2">
-                  <span class="text-sm font-light">Sep</span>
-                  <h2
-                    class="mb-2 text-lg font-extrabold leading-none tracking-tight"
-                  >
-                    21
-                  </h2>
-                </div>
-                <div class="space-y-2">
-                  <p class="text-sm font-light">
-                    April 27, 2024 @ 10:00 am - April 27, 2034 @ 3:00 pm
-                  </p>
-                  <h5 class="font-extrabold">East Regional One Day</h5>
-                  <h6 class="text-sm font-medium">$25</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="border-gray-600" />
-          <div class="flex justify-between items-center">
-            <button
-              type="button"
-              class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 bg-white rounded-md text-neutral-500 hover:text-neutral-700 hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-200/60 focus:shadow-outline"
-            >
-              <i class="fa-solid fa-chevron-left text-sm"></i>
-              Previous Events
-            </button>
-            <button
-              type="button"
-              class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 bg-white rounded-md text-neutral-500 hover:text-neutral-700 hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-200/60 focus:shadow-outline"
-            >
-              Next Events
-              <i class="fa-solid fa-chevron-right text-sm"></i>
-            </button>
           </div>
         </div>
       </section>

@@ -60,4 +60,12 @@ $(document).ready(function () {
     // Optionally close other accordions if only one section should be open at a time
     $(".accordion-content").not($content).slideUp(300);
   });
+
+  $(".acc-header").click(function () {
+    // Toggle the accordion content
+    $(this).next(".acc-content").slideToggle();
+
+    // Toggle the icons
+    $(this).find("i").toggleClass("fa-plus fa-minus");
+  });
 });
