@@ -783,28 +783,30 @@
       <section class="py-6 md:py-12">
         <div class="max-w-screen-xl mx-auto p-4 space-y-8">
           <div
-            class="hidden md:flex items-center border border-gray-600 px-3 py-1.5 gap-3"
+            class="grid grid-cols-2 md:grid-cols-5 border border-gray-600 px-3 py-1.5 gap-3"
           >
             <div
-              class="bg-white w-1/2 md:w-3/6 px-3 py-4 flex items-center gap-2 border-r-0"
+              class="bg-white md:col-span-2 px-3 py-4 flex items-center gap-2 border-r-0"
             >
+              <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
               <input
                 type="search"
                 placeholder="Search for events"
                 class="flex-1 focus:outline-none text-sm font-light"
               />
             </div>
-            <span class="text-gray-400">|</span>
+
             <div
-              class="bg-white w-1/2 md:w-2/6 px-3 py-4 flex items-center gap-2 border-l-0"
+              class="bg-white md:col-span-2 px-3 py-4 flex items-center gap-2 border-l"
             >
+              <i class="fa-solid fa-location-dot text-gray-500"></i>
               <input
                 type="search"
                 placeholder="In a location"
                 class="flex-1 focus:outline-none text-sm font-light"
               />
             </div>
-            <div class="hidden md:w-1/6">
+            <div class="hidden md:block">
               <button
                 type="button"
                 class="w-full inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide text-white transition-colors duration-200 rounded-md bg-neutral-950 hover:bg-neutral-900 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none"
@@ -812,13 +814,13 @@
                 Find Events
               </button>
             </div>
-            <button
-              type="button"
-              class="w-full inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide text-white transition-colors duration-200 rounded-md bg-neutral-950 hover:bg-neutral-900 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none"
-            >
-              Find Events
-            </button>
           </div>
+          <button
+            type="button"
+            class="w-full inline-flex md:hidden items-center justify-center px-4 py-3 text-sm font-medium tracking-wide text-white transition-colors duration-200 rounded-md bg-neutral-950 hover:bg-neutral-900 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none"
+          >
+            Find Events
+          </button>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <a
