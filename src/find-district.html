@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./css/output.css" rel="stylesheet" />
+    <title>Foursquare Events</title>
+  </head>
+  <body class="font-sans">
+    <!-- Hedaer Section -->
+    <header
+      class="h-[50vh] lg:h-[80vh] flex flex-col bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./../assets/district-banner.jpg')] bg-cover bg-center"
+    >
+      <nav class="p-8 flex justify-between gap-8 items-center">
+        <a href="index.html" class="text-2xl font-bold text-white">LOGO</a>
+
+        <div class="hidden lg:flex justify-center">
+          <div
+            class="flex w-[968px] items-center justify-center gap-8 relative"
+          >
+            <div class="inline-block group">
+              <a
+                class="inline-flex gap-2 peer items-center font-semibold text-white"
+                >About Us
+                <i
+                  class="fa-solid fa-chevron-down group-hover:rotate-180 transition duration-300"
+                ></i
+              ></a>
+              <div
+                class="hidden opacity-0 group-hover:opacity-100 group-hover:block transition-all delay-500 duration-300 absolute z-10 mt-4 hover:block bg-black w-full"
+              >
+                <div class="absolute -top-4 flex justify-start ml-8 w-full">
+                  <i class="fa-solid fa-caret-up text-xl text-black"></i>
+                </div>
+
+                <div class="flex">
+                  <div class="p-6 space-y-6 w-2/3">
+                    <h4 class="text-primary text-sm font-medium uppercase">
+                      About us
+                    </h4>
+                    <div class="flex flex-col gap-8">
+                      <a
+                        href="about-mission.html"
+                        class="text-xl font-semibold text-gradient-hover text-white block"
+                        >Meet Foursquare.</a
+                      >
+                      <a
+                        href="about-history.html"
+                        class="text-xl font-semibold hover:text-gradient text-white block"
+                        >Discover Foursquare's rich history.</a
+                      >
+                      <a
+                        href="about-beliefs.html"
+                        class="text-xl font-semibold hover:text-gradient text-white block"
+                        >What does Foursquare believe?</a
+                      >
+                      <a
+                        href="about-leadership.html"
+                        class="text-xl font-semibold hover:text-gradient text-white block"
+                        >Meet Foursquare's leadership team.</a
+                      >
+                      <a
+                        href="about-bussiness.html"
+                        class="text-xl font-semibold hover:text-gradient text-white block"
+                        >Learn more about the business of Foursquare.</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-6 space-y-6 w-1/3 bg-blue-200">
+                    <h4 class="text-sm font-medium uppercase">
+                      More about Foursquare
+                    </h4>
+                    <div class="flex flex-col gap-4">
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Find a church</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Multiethnic leaders</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Women in Leadership</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >NextGen</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Forerunners (70+)</a
+                      >
+                    </div>
+                    <hr class="border-black" />
+                    <div class="space-y-3">
+                      <h6>Read updates + find resources.</h6>
+                      <div class="space-y-2">
+                        <div class="bg-white px-3 py-2 flex gap-2">
+                          <input
+                            type="text"
+                            placeholder="Search..."
+                            class="text-sm font-medium focus:outline-none"
+                          />
+                        </div>
+                        <h4 class="text-lg font-extrabold">
+                          Follow along with the Foursquare story on social
+                          media.
+                        </h4>
+                        <div class="flex items-center justify-center gap-6">
+                          <a href="#" class="text-black text-xl"
+                            ><i class="fa-brands fa-facebook"></i
+                          ></a>
+                          <a href="#" class="text-black text-xl"
+                            ><i class="fa-brands fa-instagram"></i
+                          ></a>
+                          <a href="#" class="text-black text-xl"
+                            ><i class="fa-brands fa-youtube"></i
+                          ></a>
+                          <a href="#" class="text-black text-xl"
+                            ><i class="fa-brands fa-spotify"></i
+                          ></a>
+                          <a href="#" class="text-black text-xl"
+                            ><i class="fa-brands fa-square-x-twitter"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inline-block group">
+              <a
+                href="#"
+                class="inline-flex gap-2 peer items-center font-semibold text-white"
+                >Get Invloved<i
+                  class="fa-solid fa-chevron-down text-sm group-hover:rotate-180 transition duration-300"
+                ></i
+              ></a>
+              <div
+                class="hidden group-hover:block absolute left-0 z-10 mt-4 hover:block bg-black w-full"
+              >
+                <div class="absolute -top-4 flex justify-around -ml-48 w-full">
+                  <i class="fa-solid fa-caret-up text-xl text-black"></i>
+                </div>
+
+                <div class="flex">
+                  <div class="p-6 space-y-6 w-2/3">
+                    <h4 class="text-primary text-sm font-medium uppercase">
+                      Get Involved
+                    </h4>
+                    <div class="flex flex-col gap-8">
+                      <a
+                        href="get-invovled.html"
+                        class="text-xl font-semibold text-gradient-hover text-white block"
+                        >Welcome! We have just the place for you.</a
+                      >
+                      <a
+                        href="#"
+                        class="text-xl font-semibold hover:text-gradient text-white block"
+                        >Become a Foursquare minister.</a
+                      >
+                      <a
+                        href="#"
+                        class="text-xl font-semibold hover:text-gradient text-white block"
+                        >Church plant or bring your church into Foursquare.</a
+                      >
+                      <a
+                        href="#"
+                        class="text-xl font-semibold hover:text-gradient text-white block"
+                        >Become a Foursquare chaplain.</a
+                      >
+                      <a
+                        href="#"
+                        class="text-xl font-semibold hover:text-gradient text-white block"
+                        >Become a missionary worker.</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-6 space-y-6 w-1/3 bg-red-200">
+                    <h4 class="font-medium uppercase">
+                      More ways to get involved
+                    </h4>
+                    <div class="flex flex-col gap-4">
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Find a local Foursquare church.</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Discover Cause Networks</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Become a Covenant Church</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Check out a Foursquare event</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Become a credential coach</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inline-block group">
+              <a
+                href="#"
+                class="inline-flex gap-2 peer items-center font-semibold text-white"
+                >Support<i
+                  class="fa-solid fa-chevron-down text-sm group-hover:rotate-180 transition duration-300"
+                ></i
+              ></a>
+              <div
+                class="hidden group-hover:block absolute left-0 z-10 mt-4 hover:block bg-black w-full"
+              >
+                <div class="absolute -top-4 flex justify-center -ml-12 w-full">
+                  <i class="fa-solid fa-caret-up text-xl text-black"></i>
+                </div>
+
+                <div class="flex">
+                  <div class="p-6 space-y-6 w-2/3">
+                    <h4 class="text-primary text-sm font-medium uppercase">
+                      Get Support
+                    </h4>
+                    <div class="flex flex-col gap-8">
+                      <a
+                        href="#"
+                        class="flex flex-col gap-2 text-gradient-hover text-white"
+                      >
+                        <h4 class="text-xl font-semibold">Leader Support</h4>
+                        <p class="font-medium">
+                          We have support + help just for our local leaders and
+                          administrators
+                        </p>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="flex flex-col gap-2 text-gradient-hover text-white"
+                      >
+                        <h4 class="text-xl font-semibold">Pastoral Care</h4>
+                        <p class="font-medium">
+                          You may be a pastor, but you are still human. Learn
+                          how Foursquare cares for you, the individual.
+                        </p>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="flex flex-col gap-2 text-gradient-hover text-white"
+                      >
+                        <h4 class="text-xl font-semibold">Healthy Culture</h4>
+                        <p class="font-medium">
+                          See how Foursquare is taking steps to create a healthy
+                          culture that protects and empowers others.
+                        </p>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="flex flex-col gap-2 text-gradient-hover text-white"
+                      >
+                        <h4 class="text-xl font-semibold">
+                          Meet Foursquare's leadership team.
+                        </h4>
+                        <p class="font-medium">
+                          Healthy leaders are growing leaders. See how
+                          Foursquare invests in you as you invest in yourself.
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-6 space-y-6 w-1/3 bg-blue-200">
+                    <h4 class="text-sm font-medium uppercase">
+                      Additional Support
+                    </h4>
+                    <div class="flex flex-col gap-4">
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Foursquare Insurance</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Foursquare Properties Services</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Foursquare Retirement</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Foursquare Financial Solutions</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Charter Church Transition</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Foursquare Hub Login</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Hub 2.0 FAQs + Resources</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >File an incident report</a
+                      >
+                    </div>
+                    <hr class="border-black" />
+                    <div class="flex flex-col gap-4">
+                      <h4 class="text-sm font-medium uppercase">
+                        News + Resources
+                      </h4>
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Admin Toolkt</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Church Resources</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Foursquare Logo</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inline-block group">
+              <a
+                href="#"
+                class="inline-flex gap-2 peer items-center font-semibold text-white"
+                >Mission + Ministry<i
+                  class="fa-solid fa-chevron-down text-sm group-hover:rotate-180 transition duration-300"
+                ></i
+              ></a>
+              <div
+                class="hidden group-hover:block absolute left-0 z-10 mt-4 hover:block bg-black w-full"
+              >
+                <div class="absolute -top-4 flex justify-center ml-20 w-full">
+                  <i class="fa-solid fa-caret-up text-xl text-black"></i>
+                </div>
+
+                <div class="flex">
+                  <div class="p-6 space-y-6 w-2/3">
+                    <h4 class="text-primary text-sm font-medium uppercase">
+                      Mission + Ministry
+                    </h4>
+                    <div class="flex flex-col gap-8">
+                      <a
+                        href="#"
+                        class="text-xl font-semibold text-gradient-hover text-white inline-block"
+                        >Foursquare Missions International</a
+                      >
+                      <a
+                        href="#"
+                        class="text-xl font-semibold hover:text-gradient text-white inline-block"
+                        >Foursquare Disaster Relief</a
+                      >
+                      <a
+                        href="#"
+                        class="text-xl font-semibold hover:text-gradient text-white inline-block"
+                        >Foursquare Chaplains International</a
+                      >
+                      <a
+                        href="#"
+                        class="text-xl font-semibold hover:text-gradient text-white inline-block"
+                        >Multiply (Plant a church)</a
+                      >
+                      <a
+                        href="#"
+                        class="text-xl font-semibold hover:text-gradient text-white inline-block"
+                        >NextGen</a
+                      >
+                      <a
+                        href="#"
+                        class="text-xl font-semibold hover:text-gradient text-white inline-block"
+                        >Cause Networks</a
+                      >
+                      <a
+                        href="#"
+                        class="text-xl font-semibold hover:text-gradient text-white inline-block"
+                        >ForeRunners</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-6 space-y-6 w-1/3 bg-blue-200">
+                    <h4 class="text-lg font-medium uppercase">
+                      Find your local district.
+                    </h4>
+                    <div class="flex flex-col gap-4">
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Atlantic District</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Central District</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >National Hispanic District</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Northwest District</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Pacific District</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Western District</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inline-block group">
+              <a
+                href="#"
+                class="inline-flex gap-2 peer items-center font-semibold text-white"
+                >Event + Training<i
+                  class="fa-solid fa-chevron-down text-sm group-hover:rotate-180 transition duration-300"
+                ></i
+              ></a>
+              <div
+                class="hidden group-hover:block absolute left-0 z-10 mt-4 hover:block bg-black w-full"
+              >
+                <div class="absolute -top-4 flex justify-end -ml-48 w-full">
+                  <i class="fa-solid fa-caret-up text-xl text-black"></i>
+                </div>
+
+                <div class="flex">
+                  <div class="p-6 space-y-6 w-2/3">
+                    <h4 class="text-primary text-sm font-medium uppercase">
+                      Event + Traning
+                    </h4>
+                    <div class="flex flex-col gap-8">
+                      <a
+                        href="events-calendar.html"
+                        class="text-xl font-semibold text-gradient-hover text-white block"
+                        >Check out district + national Foursquare events.</a
+                      >
+                      <a
+                        href="#"
+                        class="text-xl font-semibold hover:text-gradient text-white block"
+                        >Find Foursquare training + education opportunities.</a
+                      >
+                    </div>
+                  </div>
+                  <div class="p-6 space-y-6 w-1/3 bg-blue-200">
+                    <h4 class="text-sm font-medium uppercase">
+                      Find more events
+                    </h4>
+                    <div class="flex flex-col gap-4">
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Foursquare Connection brings the Foursquare community
+                        together each May.</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >21 Days of Prayer + Fasting begins in January.</a
+                      >
+                      <a
+                        href="#"
+                        class="text-sm font-medium text-gradient-hover inline"
+                        >Foursquare Leader Conferences are district events just
+                        for you.</a
+                      >
+                    </div>
+                    <hr class="border-black border-2" />
+                    <div class="space-y-3">
+                      <div class="space-y-4">
+                        <a
+                          href="#"
+                          class="px-4 py-2 rounded-full border-2 border-black text-black text-sm font-semibold"
+                          >Find more events</a
+                        >
+
+                        <div class="flex items-center justify-center gap-6">
+                          <a href="#" class="text-black text-xl"
+                            ><i class="fa-brands fa-facebook"></i
+                          ></a>
+                          <a href="#" class="text-black text-xl"
+                            ><i class="fa-brands fa-instagram"></i
+                          ></a>
+                          <a href="#" class="text-black text-xl"
+                            ><i class="fa-brands fa-youtube"></i
+                          ></a>
+                          <a href="#" class="text-black text-xl"
+                            ><i class="fa-brands fa-spotify"></i
+                          ></a>
+                          <a href="#" class="text-black text-xl"
+                            ><i class="fa-brands fa-square-x-twitter"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <button class="text-xs bg-primary px-1 py-0.5 rounded-full">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button
+            class="hidden lg:inline-block bg-primary text-xs py-0.5 px-2 rounded-full font-medium uppercase"
+          >
+            Espanyol
+          </button>
+          <button
+            class="hidden lg:inline-block group bg-primary text-xs py-0.5 px-1 rounded-full font-medium uppercase"
+          >
+            Quick Links <i class="fa-solid fa-chevron-down"></i>
+
+            <div
+              class="hidden opacity-0 group-hover:opacity-100 group-hover:block right-2 max-w-screen-lg transition-all delay-500 duration-300 absolute z-10 mt-4 hover:block bg-black w-full"
+            >
+              <div class="absolute -top-4 flex justify-end ml-8 w-full">
+                <i class="fa-solid fa-caret-up text-xl text-black"></i>
+              </div>
+
+              <div class="flex text-left">
+                <div class="p-6 space-y-6 w-2/3">
+                  <h4 class="text-primary text-sm font-medium uppercase">
+                    Quick links
+                  </h4>
+                  <div class="flex flex-col gap-8">
+                    <a
+                      href="news-resources.html"
+                      class="text-xl font-semibold text-gradient-hover text-white block"
+                      >News + Resources</a
+                    >
+                    <a
+                      href="international.html"
+                      class="text-xl font-semibold hover:text-gradient text-white block"
+                      >Foursquare Missions International</a
+                    >
+                    <a
+                      href="disaster.html"
+                      class="text-xl font-semibold hover:text-gradient text-white block"
+                      >Foursquare Disaster Relief</a
+                    >
+                    <a
+                      href="hub.html"
+                      class="text-xl font-semibold hover:text-gradient text-white block"
+                      >Foursquare Hub Login</a
+                    >
+                  </div>
+                </div>
+                <div class="p-6 space-y-6 w-1/3 bg-blue-200">
+                  <h4 class="text-sm font-medium uppercase">Stay Connected</h4>
+                  <div class="flex flex-col gap-4">
+                    <a
+                      href="sign-up-email.html"
+                      class="text-sm font-medium text-gradient-hover inline"
+                      >Sign up for emails</a
+                    >
+                    <a
+                      href="find-church.html"
+                      class="text-sm font-medium text-gradient-hover inline"
+                      >Find a Foursquare church</a
+                    >
+                    <a
+                      href="find-district.html"
+                      class="text-sm font-medium text-gradient-hover inline"
+                      >Find your local district</a
+                    >
+                    <a
+                      href="contact.html"
+                      class="text-sm font-medium text-gradient-hover inline"
+                      >Contact Foursquare</a
+                    >
+                  </div>
+                  <hr class="border-black" />
+                  <div class="space-y-3">
+                    <div class="space-y-2">
+                      <h4 class="text-sm font-semibold uppercase">
+                        Follow Us On Social
+                      </h4>
+                      <div class="flex items-center justify-center gap-6">
+                        <a href="#" class="text-black text-xl"
+                          ><i class="fa-brands fa-facebook"></i
+                        ></a>
+                        <a href="#" class="text-black text-xl"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                        <a href="#" class="text-black text-xl"
+                          ><i class="fa-brands fa-youtube"></i
+                        ></a>
+                        <a href="#" class="text-black text-xl"
+                          ><i class="fa-brands fa-spotify"></i
+                        ></a>
+                        <a href="#" class="text-black text-xl"
+                          ><i class="fa-brands fa-square-x-twitter"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </button>
+          <button
+            id="nav-btn"
+            class="inline-block lg:hidden text-primary text-lg py-1 px-2 rounded-full font-medium uppercase"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div
+        class="flex-1 w-full lg:max-w-screen-sm mx-auto flex flex-col justify-center items-center gap-y-6 p-4"
+      >
+        <h1
+          class="text-white text-5xl md:text-7xl lg:text-8xl text-center font-extrabold"
+        >
+          Districts
+        </h1>
+        <p class="text-xl text-center font-medium text-white">
+          Find out what district you are in,<br />
+          and meet your district supervisor.
+        </p>
+      </div>
+
+      <div
+        id="mobile-nav"
+        class="hidden absolute bg-black min-h-screen w-full p-4 space-y-6"
+      >
+        <div class="space-y-6">
+          <div class="flex justify-end">
+            <button id="close-mobile-nav" class="text-primary">
+              <i class="fa-solid fa-close"></i>
+            </button>
+          </div>
+          <div class="flex gap-3 items-center">
+            <button
+              class="block bg-primary text-xs py-2 px-3 w-full rounded-full font-medium uppercase"
+            >
+              Espanyol
+            </button>
+            <button
+              class="flex gap-3 items-center justify-center bg-primary text-xs py-2 px-3 w-full rounded-full font-medium uppercase"
+            >
+              Quick Links <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col text-3xl text-primary font-medium gap-6">
+          <a
+            href="#"
+            class="accordion-trigger flex justify-between items-center"
+            >About Us <i class="fa-solid text-sm fa-chevron-down"></i
+          ></a>
+          <div
+            class="accordion-content text-base font-semibold flex flex-col gap-4 text-white"
+            style="display: none"
+          >
+            <a href="#" class="text-gradient">Meet Foursquare</a>
+            <a href="#" class="text-gradient">History</a>
+            <a href="#" class="text-gradient">Beliefs</a>
+            <a href="#" class="text-gradient">International Deversity</a>
+            <a href="#" class="text-gradient">Foursquare Leadership</a>
+            <a href="#" class="text-gradient">Foursquare Business</a>
+            <a href="#" class="text-gradient">Find a church</a>
+          </div>
+
+          <a
+            href="#"
+            class="accordion-trigger flex justify-between items-center"
+            >Get Involved <i class="fa-solid text-sm fa-chevron-down"></i
+          ></a>
+          <div class="accordion-content" style="display: none">
+            <p>Content about 'Get Involved'</p>
+          </div>
+
+          <a
+            href="#"
+            class="accordion-trigger flex justify-between items-center"
+            >Get Support <i class="fa-solid text-sm fa-chevron-down"></i
+          ></a>
+          <div class="accordion-content" style="display: none">
+            <p>Content about 'Get Support'</p>
+          </div>
+
+          <a
+            href="#"
+            class="accordion-trigger flex justify-between items-center"
+            >Mission + Ministry <i class="fa-solid text-sm fa-chevron-down"></i
+          ></a>
+          <div class="accordion-content" style="display: none">
+            <p>Content about 'Mission + Ministry'</p>
+          </div>
+
+          <a
+            href="#"
+            class="accordion-trigger flex justify-between items-center"
+            >Training + Events <i class="fa-solid text-sm fa-chevron-down"></i
+          ></a>
+          <div class="accordion-content" style="display: none">
+            <p>Content about 'Training + Events'</p>
+          </div>
+
+          <a
+            href="#"
+            class="accordion-trigger flex justify-between items-center"
+            >US Districts <i class="fa-solid text-sm fa-chevron-down"></i
+          ></a>
+          <div class="accordion-content" style="display: none">
+            <p>Content about 'US Districts'</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="">
+      <section class="py-12 bg-primary">
+        <div class="max-w-screen-xl mx-auto p-8 space-y-8">
+          <div id="district-map" class="min-h-[600px]"></div>
+          <div class="lg:w-2/3 mx-auto">
+            <p class="text-lg md:text-2xl font-medium text-center">
+              Foursquare churches in the U.S. are organized regionally into six
+              districts. Each district has a team devoted to strengthening the
+              Foursquare churches and leaders in their respective local
+              communities through training, care, resourcing and partnership.
+              All district staff are part of the distributed One Team working
+              together to serve and grow our local leaders.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-12">
+        <div class="max-w-screen-xl mx-auto p-8 space-y-12">
+          <div class="space-y-6 lg:w-2/3 mx-auto">
+            <h3 class="trext-3xl md:text-5xl font-extrabold text-center">
+              Meet your district
+            </h3>
+            <p class="text-lg md:text-2xl font-medium text-center">
+              Our districts exist to serve our local leaders across the United
+              States. Find your district's webpage to learn more about who is
+              supporting our local leaders with care, practical resourcing and a
+              whole lot more.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="space-y-6 bg-red-950 text-white p-6">
+              <h3 class="text-3xl font-extrabold">Atlantic District</h3>
+              <p class="font-medium">
+                The Foursquare Atlantic District serves the following states:
+                Alabama, Connecticut, Delaware, Florida, Georgia, Kentucky,
+                Maine, Maryland, Massachusetts, New Hampshire, New Jersey, New
+                York, North Carolina, Ohio, Pennsylvania, Rhode Island, South
+                Carolina, Tennessee, Vermont, Virginia, Washington DC, West
+                Virginia
+              </p>
+              <button
+                type="button"
+                class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 bg-white border rounded-md text-neutral-500 hover:text-neutral-700 border-neutral-200/70 hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-200/60 focus:shadow-outline"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="space-y-6 bg-purple-950 text-white p-6">
+              <h3 class="text-3xl font-extrabold">Central District</h3>
+              <p class="font-medium">
+                The Foursquare Central District serves the following states:
+                Arkansas, Colorado, Illinois, Indiana, Iowa, Kansas, Louisiana,
+                Michigan, Minnesota, Mississippi, Missouri, Nebraska, New
+                Mexico, Oklahoma, South Dakota, Texas, Wisconsin
+              </p>
+              <button
+                type="button"
+                class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 bg-white border rounded-md text-neutral-500 hover:text-neutral-700 border-neutral-200/70 hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-200/60 focus:shadow-outline"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="space-y-6 bg-rose-950 text-white p-6">
+              <h3 class="text-3xl font-extrabold">
+                National Hispanic District
+              </h3>
+              <p class="font-medium">
+                The Foursquare National Hispanic District encompasses the U.S.
+                and is designed for leaders and churches who are served and
+                serve best, in this multicultural context.
+              </p>
+              <button
+                type="button"
+                class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 bg-white border rounded-md text-neutral-500 hover:text-neutral-700 border-neutral-200/70 hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-200/60 focus:shadow-outline"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="space-y-6 bg-green-950 text-white p-6">
+              <h3 class="text-3xl font-extrabold">Northwest District</h3>
+              <p class="font-medium">
+                The Foursquare Northwest District serves the following states:
+                Alaska, Idaho, Montana, North Dakota, Oregon, Washington,
+                Wyoming
+              </p>
+              <button
+                type="button"
+                class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 bg-white border rounded-md text-neutral-500 hover:text-neutral-700 border-neutral-200/70 hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-200/60 focus:shadow-outline"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="space-y-6 bg-yellow-950 text-white p-6">
+              <h3 class="text-3xl font-extrabold">Pacific District</h3>
+              <p class="font-medium">
+                The Foursquare Pacific District serves the state of Hawaii
+              </p>
+              <button
+                type="button"
+                class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 bg-white border rounded-md text-neutral-500 hover:text-neutral-700 border-neutral-200/70 hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-200/60 focus:shadow-outline"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="space-y-6 bg-blue-950 text-white p-6">
+              <h3 class="text-3xl font-extrabold">Western District</h3>
+              <p class="font-medium">
+                The Foursquare Western District serves the following states:
+                Arizona, California, Nevada, Utah
+              </p>
+              <button
+                type="button"
+                class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 bg-white border rounded-md text-neutral-500 hover:text-neutral-700 border-neutral-200/70 hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-200/60 focus:shadow-outline"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black py-16">
+      <div
+        class="max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 p-4"
+      >
+        <div class="space-y-16">
+          <div class="space-y-4">
+            <h4 class="uppercase text-white font-bold">Contact Us</h4>
+            <h2 class="text-primary text-6xl font-light">
+              Reach out to Foursquare
+            </h2>
+          </div>
+          <div class="space-y-6">
+            <h4 class="uppercase text-white font-bold">
+              Our mailing address is:
+            </h4>
+            <p class="text-primary text-lg font-medium">
+              P.O. Box 26902<br />
+              Los Angeles, CA 90026
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <h4 class="uppercase text-white font-bold">
+              Contact the Foursquare One Team
+            </h4>
+            <p class="text-primary text-lg font-medium leading-7">
+              Talk to a real person who will connect you with the person or
+              information you need!<br />
+              Phone: 213.989.4234<br />
+              Toll-Free: 888.635.4234
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <h4 class="uppercase text-white font-bold">
+              Visit more Foursquare ministries
+            </h4>
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-primary font-medium text-lg inline-block"
+                >Foursquare Disaster Relief</a
+              >
+              <a href="#" class="text-primary font-medium text-lg inline-block"
+                >Foursquare Financial Solutions</a
+              >
+              <a href="#" class="text-primary font-medium text-lg inline-block"
+                >Foursquare Missions International</a
+              >
+              <a href="#" class="text-primary font-medium text-lg inline-block"
+                >Foursquare Missions Press</a
+              >
+              <a href="#" class="text-primary font-medium text-lg inline-block"
+                >Foursquare Multiply</a
+              >
+              <a href="#" class="text-primary font-medium text-lg inline-block"
+                >Life Pacific University</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="space-y-12">
+            <div class="space-y-6 text-gradient pb-3">
+              <h4 class="uppercase text-white font-bold">About us</h4>
+              <div class="flex flex-col gap-4">
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Our mission + approach</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Diversity</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Beliefs</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Leadership</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Foursquare Business</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Careers</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Logo + Style Guide</a
+                >
+              </div>
+            </div>
+            <div class="space-y-6 text-gradient pb-3">
+              <h4 class="uppercase text-white font-bold">Get Involved</h4>
+              <div class="flex flex-col gap-4">
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Become a Minister</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >For your Church</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Become a Chaplain</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Plant a Church</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Become a Missionary Worker</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Cause Networks</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Newsletters</a
+                >
+              </div>
+            </div>
+            <div class="space-y-6 pb-3">
+              <h4 class="uppercase text-white font-bold">U.S. Districts</h4>
+              <div class="flex flex-col gap-4">
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Atlantic District</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Central District</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >National Hispanic District</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Northwest District</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Pacific District</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Western District
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-12">
+            <div class="space-y-6 text-gradient pb-3">
+              <h4 class="uppercase text-white font-bold">Support</h4>
+              <div class="flex flex-col gap-4">
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Insurance</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Property</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Retirement</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Financial Solutions</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Education</a
+                >
+              </div>
+            </div>
+            <div class="space-y-6 text-gradient pb-3">
+              <h4 class="uppercase text-white font-bold">Mission + Ministry</h4>
+              <div class="flex flex-col gap-4">
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >NextGen</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >ForeRunners</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Shared Mission</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Global Mission</a
+                >
+              </div>
+            </div>
+            <div class="space-y-6 pb-3">
+              <h4 class="uppercase text-white font-bold">Events + Training</h4>
+              <div class="flex flex-col gap-4">
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Events</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Foursquare Connection</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Foursquare Leader Conference</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Foursquare Forum</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Foursquare Centennial</a
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-lg inline-block"
+                  >Training Opportunities</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-screen-lg mx-auto mt-8 flex flex-col lg:flex-row gap-8 lg:justify-center items-start lg:items-center p-4"
+      >
+        <p class="text-sm font-medium text-white">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          The Foursquare Church
+        </p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="text-white text-xl"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" class="text-white text-xl"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="text-white text-xl"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#" class="text-white text-xl"
+            ><i class="fa-brands fa-spotify"></i
+          ></a>
+          <a href="#" class="text-white text-xl"
+            ><i class="fa-brands fa-square-x-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
