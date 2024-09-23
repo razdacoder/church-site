@@ -662,6 +662,18 @@ video {
   margin-top: 2rem;
 }
 
+.mr-12{
+  margin-right: 3rem;
+}
+
+.-ml-8{
+  margin-left: -2rem;
+}
+
+.-ml-16{
+  margin-left: -4rem;
+}
+
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -790,6 +802,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-3\/4{
+  width: 75%;
 }
 
 .max-w-2xl{
@@ -1420,6 +1436,11 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-3{
